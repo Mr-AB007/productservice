@@ -7,6 +7,7 @@ import lombok.*;
 @NoArgsConstructor
 @Data
 @Builder
+@Entity
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
