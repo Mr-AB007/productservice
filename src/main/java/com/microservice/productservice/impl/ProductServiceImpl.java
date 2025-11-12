@@ -21,7 +21,6 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public long addProduct(ProductRequest productRequest) {
-        log.info("ProductServiceImpl | addProduct is called");
 
         Product product
                 = Product.builder()
@@ -40,7 +39,6 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public ProductResponse getProductById(long productId) {
 
-        log.info("ProductServiceImpl | getProductById is called");
         log.info("ProductServiceImpl | getProductById | Get the product for productId: {}", productId);
 
         Product product
